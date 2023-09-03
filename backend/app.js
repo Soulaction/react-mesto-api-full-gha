@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const { errors } = require('celebrate');
 const cookieParser = require('cookie-parser');
@@ -8,7 +9,7 @@ const appRouter = require('./routes/index');
 const handlerError = require('./middlewares/handler-errors');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3000 } = process.env;
 const app = express();
 
 mongoose.connect('mongodb://localhost:27017/mestodb', {
