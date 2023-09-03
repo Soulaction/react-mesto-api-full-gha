@@ -1,0 +1,6 @@
+.header__menu_close {
+    background: url('../../../../images/icons/close.svg') no-repeat;
+    background-size: cover;
+    min-width: 20px;
+    background-size: 20px;
+}

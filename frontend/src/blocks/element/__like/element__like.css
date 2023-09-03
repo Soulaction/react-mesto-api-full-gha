@@ -1,0 +1,15 @@
+.element__like {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: url('../../../images/icons/unset-like.svg') no-repeat;
+    background-size: cover;
+    min-width: 22px;
+    min-height: 19px;
+    transition: opacity .3s linear;
+}
+
+.element__like:hover {
+    cursor: pointer;
+    opacity: .5;
+}

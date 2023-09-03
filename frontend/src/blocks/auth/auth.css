@@ -1,0 +1,17 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 269px);
+}
+
+@media screen and (max-width: 525px) {
+    .auth {
+        height: calc(100vh - 202px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .auth {
+        height: calc(100vh - 184px);
+    }
+}

@@ -1,0 +1,16 @@
+.auth__link-up {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: opacity .3s linear;
+}
+
+.auth__link-up:hover {
+    cursor: pointer;
+    opacity: .6;
+}

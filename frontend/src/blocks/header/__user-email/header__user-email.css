@@ -1,0 +1,10 @@
+.header__user-email {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}

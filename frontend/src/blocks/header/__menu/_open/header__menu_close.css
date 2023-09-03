@@ -1,0 +1,5 @@
+.header__menu_open {
+    background: url('../../../../images/icons/burger.svg') no-repeat;
+    min-width: 24px;
+    min-height: 18px;
+}
