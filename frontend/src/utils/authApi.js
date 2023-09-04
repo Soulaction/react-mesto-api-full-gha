@@ -59,7 +59,7 @@ class AuthApi {
 }
 
 export const authApi = new AuthApi({
-    baseUrl: 'http://pictures.nomoredomainsicu.ru/api',
+    baseUrl: 'http://api.pictures.nomoredomainsicu.ru',
     headers: {
         'Content-Type': 'application/json'
     }
