@@ -43,7 +43,7 @@ function App() {
                     }
                 })
                 .catch((err) => console.log('Ошибка: ' + err));
-    }, [])
+    }, [loggedIn])
 
     useEffect(() => {
         if (loggedIn) {

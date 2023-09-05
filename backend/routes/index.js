@@ -14,9 +14,17 @@ const NotFoundError = require('../errors/not-found-error');
 
 router.use('/users', auth, usersRouter);
 router.use('/cards', auth, cardsRouter);
+
+router.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 router.get('/signout', (req, res) => {
   res.clearCookie('token').send({ message: 'Выход' });
 });
+
 router.post('/signin', celebrate({
   body: Joi.object()
     .keys({
@@ -45,6 +53,7 @@ router.post('/signup', celebrate({
         .pattern(/https?:\/\/(www.)?[-a-zA-Z0-9_~:/?#@!$&'()*,.+;=]+\.[-a-zA-Z0-9_~:/?#@!$&'()*,+;=]+#?/),
     }),
 }), createUser);
+
 router.use('/*', auth, (req, res, next) => {
   next(new NotFoundError('Задан некорректный URL'));
 });
